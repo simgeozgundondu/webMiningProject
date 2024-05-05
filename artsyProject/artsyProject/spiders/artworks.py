@@ -20,10 +20,10 @@ class ArtworksSpider(scrapy.Spider):
     def parse_artworks(self, response):
         # Extracting links to art collection categories
         links = response.css("a.RouterLink__RouterAwareLink-sc-1nwbtp5-0.eeJRiP::attr(href)").getall()
-        gene_links = [link for link in links if link.startswith('/collection')]
+        artworks_links = [link for link in links if link.startswith('/collection')]
 
         # Visiting each category page to extract artworks
-        for link in gene_links:
+        for link in artworks_links:
             absolute_url = response.urljoin(link)
             yield scrapy.Request(url=absolute_url, callback=self.parse_category_item)
 
@@ -38,6 +38,7 @@ class ArtworksSpider(scrapy.Spider):
             artist_name = artwork.css("div.Box-sc-15se88d-0.Text-sc-18gcpao-0.ilQWRL span[to]::text").get()
             price = artwork.css("div.Box-sc-15se88d-0.Text-sc-18gcpao-0.eXbAnU.bfCidL::text").get()
             place = artwork.css("div.Box-sc-15se88d-0.Text-sc-18gcpao-0.caIGcn.wvERG::text").get()
+            image_url= artwork.css("div.Box-sc-15se88d-0.fIeAnl img::attr(src)").get()
 
             # Extracting artwork date if available
             artwork_info = artwork.css("div.Box-sc-15se88d-0.Text-sc-18gcpao-0.caIGcn.iVSzqj::text").get()
@@ -53,5 +54,6 @@ class ArtworksSpider(scrapy.Spider):
                 "artist": artist_name,
                 "price": price,
                 "place": place,
-                "artwork_date": artwork_date
+                "artwork_date": artwork_date,
+                "image_url": image_url
             }
