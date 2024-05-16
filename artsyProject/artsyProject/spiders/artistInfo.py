@@ -43,7 +43,7 @@ class ArtistinfoSpider(scrapy.Spider):
 
         yield {
             'Artist Name': artist_name,
-            'Date ': artist_date,
+            'Date': artist_date,
             'Nationality': artist_nationality ,
             'Bio': artist_bio,
             'Artworks':artworks

@@ -1,0 +1,576 @@
+[
+    {
+        "museum_name": "Herzliya Museum of Contemporary Art",
+        "country": "Israel",
+        "city": "Herzliya 4637904",
+        "address": "HaBanim St 4",
+        "description": "The Herzliya Museum of Contemporary Art is a leading institution of contemporary art in Israel and its reputation spreads well beyond Israel’s national borders."
+    },
+    {
+        "museum_name": "Qiao Space",
+        "country": "China",
+        "city": "Shanghai 200232",
+        "address": "2555-5, Long Teng Ave.",
+        "description": "Qiao Space is a private exhibition space owned by collector Qiao Zhibing, aiming to present work from outstanding contemporary artists. Combined with his private collection, Mr Qiao looks to share the magic of contemporary art with the rest of the art-loving population."
+    },
+    {
+        "museum_name": "Artport Tel Aviv",
+        "country": "Israel",
+        "city": "Tel Aviv",
+        "address": "55 Ben Tvsi",
+        "description": "Based in Tel Aviv, Artport is a cutting-edge contemporary art space with the leading visual arts residency for Israeli and international artists and curators, and a robust and diverse program of exhibitions, artist talks, workshops, and the Artport Art Book Fair."
+    },
+    {
+        "museum_name": "Vassily Polenov Fine Arts Museum and National Park",
+        "country": "Russia",
+        "city": "- 301011",
+        "address": "Zaoksky area, Tula Region, Polenovo",
+        "description": "Having become a museum during the artist's lifetime Vassily Polenov Fine Art Museum and National Park  displays the wide range of works by the artist and his circle (mid 19 - beg 20 cen) together with a rotating programme of temporary exhibitions."
+    },
+    {
+        "museum_name": "Musée national de Préhistoire",
+        "country": "France",
+        "city": "Les Eyzies-de-Tayac 24620",
+        "address": "1 rue du musée",
+        "description": "The Musée national de Préhistoire is situated in the Vezère valley, a region known for its major archaeological sites (Lascaux, Font-de-Gaume, Comparelles), and houses a rich collection of objects from 400,000 BC to 10,000 BC"
+    },
+    {
+        "museum_name": "Baxter Street at the Camera Club of New York",
+        "country": "United States",
+        "city": "New York, NY 10013",
+        "address": "128 Baxter St",
+        "description": "Founded in 1884, Baxter St at the Camera Club of New York is one of New York’s oldest artist-run nonprofit spaces fostering the development of emerging lens-based artists at critical moments of their careers. Through dynamic programming and access to workspace, Baxter St at CCNY has long been a catalyst for innovative creation within the artistic mediums of photography and video practices. Ranging from exhibitions, workspace residency programs, and conversation series, our core mission is to support and activate a vibrant community deeply engaged in the art of lens-based contemporary practices."
+    },
+    {
+        "museum_name": "Musées et domaine nationaux du palais de Compiègne",
+        "country": "France",
+        "city": "Compiègne 60200",
+        "address": "Place du General de Gaulle",
+        "description": "The Château Compiègne was one of the main royal residences, along with Versailles and Fontainebleau. Home of Louis XV and then Louis XVI, the château was later restored by Napoléon III, who filled the royal apartments with furniture and artworks from the Second Empire."
+    },
+    {
+        "museum_name": "Amon Carter Museum of American Art",
+        "country": "United States",
+        "city": "Fort Worth, TX 76107",
+        "address": "3501 Camp Bowie Blvd.",
+        "description": "Designed by renowned architect Philip Johnson, the Amon Carter houses a preeminent collection of 19th- and 20th-century American art including painting, sculpture, and works on paper and is one of the nation's major repositories of American photography. Admission is free."
+    },
+    {
+        "museum_name": "Museo de Arte Moderno de Buenos Aires",
+        "country": "Argentina",
+        "city": "Buenos Aires C1143AAO",
+        "address": "Av San Juan 350",
+        "description": "The Museo de Arte Moderno de Buenos Aires (Museum of Modern Art in Buenos Aires) was created in 1956 with a collection that aims to create the tools for the society to get in touch with modern and contemporary tendencies in argentinean and international art."
+    },
+    {
+        "museum_name": "Tibet House US",
+        "country": "United States",
+        "city": "New York, NY 10011",
+        "address": "22 West 15th Street",
+        "description": "http://www.tibethouse.us/"
+    },
+    {
+        "museum_name": "Borusan Contemporary",
+        "country": "Turkey",
+        "city": "Istanbul 34470",
+        "address": "Baltalimanı Hisar Cad. Perili Köşk No:5 34470 Rumeli Hisarı/Sarıyer",
+        "description": "Borusan Contemporary functions as a multi-platform program of exhibitions, events, educational activities, new commissions, and site-specific installations, all rooted in the Borusan Contemporary Art Collection.These activities are defined by their specific focus on media arts broadly defined, i.e. artists who work with time, light, technology, video, software and beyond. Most of the program takes place at the Haunted Mansion in Istanbul, and co-exists with the offices of Borusan Holding, in essence creating a unique art center within an office paradigm.The entire building including the galleries, office space, cafe, Art Store, and outdoor terraces with breathtaking views of the Bosphorus are open to the public on the weekends."
+    },
+    {
+        "museum_name": "56th Venice Biennale",
+        "country": "Italy",
+        "city": "Venice 30122",
+        "address": "Sestiere Castello",
+        "description": "The 56th Venice Biennale includes 89 national pavilions and a central exhibition—titled “All the World’s Futures,” curated by Okwui Enwezor—featuring over 136 artists from 53 countries. Learn more at artsy.net/venice-biennale-2015."
+    },
+    {
+        "museum_name": "Bhau Daji Lad Museum",
+        "country": "India",
+        "city": "Mumbai 400027",
+        "address": "Dr. Bhau Daji Lad Museum,  Veer Mata Jijabai Bhosale Udyan (Rani Baug),  91/A, Dr. Babasaheb Ambedkar Road Byculla East",
+        "description": "The Dr. Bhau Daji Lad Mumbai City Museum seeks to serve the community as an institution dedicated to excellence in cultural education through exhibitions and different visual and intellectual media."
+    },
+    {
+        "museum_name": "Artifex Press",
+        "country": "New York, NY 10001",
+        "city": "8th Floor",
+        "address": "109 W 27th Street",
+        "description": "Artifex Press is a publisher of digital catalogues raisonnés for leading artists such as Chuck Close, Jim Dine, Sol LeWitt, and Agnes Martin. We are sharing a selection of works from our newest catalogue, Tim Hawkinson, published on January 15, 2015 at www.artifexpress.com."
+    },
+    {
+        "museum_name": "Maraya Art Centre",
+        "country": "Sharjah 62932",
+        "city": "Al Qasba",
+        "address": "Al Taawun Road, PO Box 62932",
+        "description": "The Maraya Art Centre is a non-profit art space and cultural platform with the purpose of promoting young artists from the Arab region and abroad."
+    },
+    {
+        "museum_name": "Hill Art Foundation",
+        "country": "New York, NY 10001",
+        "city": "Floor 3",
+        "address": "239 Tenth Avenue",
+        "description": "The Hill Art Foundation is a public exhibition and education space located in New York’s Chelsea neighborhood, which showcases works from the Hill Collection in addition to works from leading artists, collections, and institutions."
+    },
+    {
+        "museum_name": "Montclair Art Museum",
+        "country": "United States",
+        "city": "Montclair, NJ 07042",
+        "address": "3 South Mountain Avenue",
+        "description": "The Montclair Art Museum, a notable, community-based institution with an international reputation, boasts a renowned collection of American and Native American art that uniquely highlights art making in the United States over the last three hundred years."
+    },
+    {
+        "museum_name": "Taipei Fine Arts Museum",
+        "country": "Taiwan",
+        "city": "Taipei City 10461",
+        "address": "No.181, Sec. 3, Zhongshan N. Rd., Zhongshan Dist.",
+        "description": "TFAM is the first public-funded fine arts museum in Taiwan dedicated to modern and contemporary art."
+    },
+    {
+        "museum_name": "CHELSEA space",
+        "country": "United Kingdom [U.K.]",
+        "city": "London, England SW1P 4JU",
+        "address": "16 John Islip Street",
+        "description": "Established in 2005, CHELSEA space is a public exhibiting space where invited art and design professionals are encouraged to work on experimental curatorial projects that may not otherwise be realised."
+    },
+    {
+        "museum_name": "Cooper Hewitt, Smithsonian Design Museum",
+        "country": "United States",
+        "city": "New York, NY 10128",
+        "address": "2 East 91st Street",
+        "description": "Cooper Hewitt, Smithsonian Design Museum is the only museum in the nation devoted exclusively to historic and contemporary design. Our exhibitions feature a rich mix of objects from our permanent collection, temporary installations, and new interactive experiences."
+    },
+    {
+        "museum_name": "Crafts Council",
+        "country": "London WC2H 9HQ",
+        "city": "24 Endell Street",
+        "address": "Hospital Club Gallery",
+        "description": "Founded in 1971 and incorporated by Royal Charter, the Crafts Council is Britain’s national agency for contemporary craft."
+    },
+    {
+        "museum_name": "Bellevue Arts Museum",
+        "country": "United States",
+        "city": "Bellevue, Washington 98004",
+        "address": "510 Bellevue Way NE",
+        "description": "Bellevue Arts Museum is a leading destination in the Pacific Northwest to experience art, craft, and design. BAM engages the community through exhibitions, programs, and publications, featuring regional, national, and international artists."
+    },
+    {
+        "museum_name": "Zeitz MOCAA",
+        "country": "Cape Town, Western Cape 8002",
+        "city": "V&A Waterfront",
+        "address": "Silo District",
+        "description": "Zeitz Museum of Contemporary Art Africa (Zeitz MOCAA) is the first major museum in Africa dedicated to contemporary art. We collect, preserve, research & exhibit cutting edge contemporary art from Africa & the Diaspora & host temporary exhibitions from around the world."
+    },
+    {
+        "museum_name": "Estate of David Smith",
+        "country": "New York, NY 10013",
+        "city": "Suite 902",
+        "address": "333 Hudson Street",
+        "description": "http://www.davidsmithestate.org"
+    },
+    {
+        "museum_name": "Center for Contemporary Art - Tel Aviv",
+        "country": "Israel",
+        "city": "Tel Aviv 6129702",
+        "address": "Tsadok Hacohen 2 St.",
+        "description": "The Center for Contemporary Art is Israel’s foremost institution for the commissioning and presentation of experimental contemporary art, and as such is a vibrant place of inspiration, provocation, and reflection."
+    },
+    {
+        "museum_name": "Kunstverein Hannover",
+        "country": "Germany",
+        "city": "Hannover D–30159",
+        "address": "Sophienstraße 2",
+        "description": "The Kunstverein Hannover is one of germany's oldest and most prestigous art associations for contemporary art based in hanover."
+    },
+    {
+        "museum_name": "Den Frie Centre of Contemporary Art",
+        "country": "Denmark",
+        "city": "Copenhagen 2100",
+        "address": "Oslo Pl. 1",
+        "description": "Den Frie Centre of Contemporary Art is dedicated to creating exhibitions initiated and organized by artists. Den Frie especially focuses on contemporary artistic communities, collective exhibitions, artists associations, and experimental groups and networks."
+    },
+    {
+        "museum_name": "Elgiz Museum",
+        "country": "Turkey",
+        "city": "Istanbul 34398",
+        "address": "Meydan Sokak Beybi Giz Plaza, Maslak",
+        "description": "Founded by collectors Sevda and Can Elgiz in 2001, the Elgiz Museum is the first non-profit institution in Turkey dedicated to contemporary art. Formerly known as Proje4L, the space continues to support artists and hosts the Elgiz Collection as a private collection museum."
+    },
+    {
+        "museum_name": "Mathaf: Arab Museum of Modern Art",
+        "country": "Doha",
+        "city": "Al Huqoul St",
+        "address": "Education City",
+        "description": "Mathaf ('museum' in Arabic) is a new institution dedicated to Arab culture and creativity opened in Doha December 2010. The museum offers a rich permanent collection of modern Arab art, and is poised to become a vital centre for dialogue and scholarship in the region."
+    },
+    {
+        "museum_name": "Pergamonmuseum",
+        "country": "Germany",
+        "city": "Berlin",
+        "address": "Bodestraße 1-3, 10178",
+        "description": "Home to the world renowned Pergamon Altar, the Pergamon Museum also accommodates three collections under the State Museums of Berlin: the Collection of Classical Antiquities, the Museum of the Ancient Near East and the Museum of Islamic Art."
+    },
+    {
+        "museum_name": "Clark House Initiative",
+        "country": "India",
+        "city": "Mumbai 400039",
+        "address": "Location & Directions c/o RBT Group, Ground Floor, Clark House building, Colaba 8 Nathalal Parekh Marg (Old Wodehouse Road)",
+        "description": "Clark House Initiative Bombay is a curatorial collaborative concerned with ideas of freedom."
+    },
+    {
+        "museum_name": "National Museum of Modern and Contemporary Art, Korea",
+        "country": "South Korea",
+        "city": "Seoul 03062",
+        "address": "30 Samcheong-ro, Sogyeok-dong, Jongno-gu",
+        "description": null
+    },
+    {
+        "museum_name": "Asia Society",
+        "country": "United States",
+        "city": "New York, NY 10021",
+        "address": "725 Park Avenue (at 70th Street)",
+        "description": "Asia Society Museum organizes groundbreaking exhibitions of traditional, modern and contemporary Asian art. The Museum is known for its Mr. and Mrs. John D. Rockefeller 3rd Collection  and for its Contemporary Art Collection."
+    },
+    {
+        "museum_name": "Maurice Verbaet Center",
+        "country": "Belgium",
+        "city": "Antwerpen 2018",
+        "address": "Mechelsesteenweg 64 A",
+        "description": "The Maurice Verbaet Center is the largest and most significant private museum dedicated to modern Belgian post-war art (1945 - 1975 +)."
+    },
+    {
+        "museum_name": "Art Institute of Chicago",
+        "country": "United States",
+        "city": "Chicago, IL 60603",
+        "address": "111 S Michigan Ave.",
+        "description": "The Art Institute of Chicago is the second largest art museum in the USA housing a world-renowned encyclopedic collection."
+    },
+    {
+        "museum_name": "The National Museum of Modern Art, Tokyo",
+        "country": "Japan",
+        "city": "Tokyo, Chiyoda 102-8322",
+        "address": "3-1 Kitanomarukoen, Chiyoda",
+        "description": "The National Museum of Modern Art, Tokyo opened in 1952. The collection ranges from works of the Meiji era to contemporary art."
+    },
+    {
+        "museum_name": "Los Angeles Contemporary Exhibitions",
+        "country": "United States",
+        "city": "Los Angeles, CA 90028",
+        "address": "6522 Hollywood Blvd.",
+        "description": "Founded in 1978 by a core group of committed artists, LACE is an internationally recognized pioneer among art institutions. LACE is a nonprofit venue that exhibits and advocates for innovations in art-making and public engagement."
+    },
+    {
+        "museum_name": "Swaraj Art Archive",
+        "country": "India",
+        "city": "Noida, Uttar Pradesh 201301",
+        "address": "D-85, Sector-2, Vyapar Marg, Noida",
+        "description": "Swaraj is an archive created to document, preserve and showcase the art of Mr. Vijay Kumar Aggarwal’s family collection."
+    },
+    {
+        "museum_name": "Museum Dhondt-Dhaenens",
+        "country": "Belgium",
+        "city": "Deurle 9831",
+        "address": "Museumlaan 14",
+        "description": "The museum Dhondt-Dhaenens is a private foundation recognised by the Flemish Government. As a museum and contemporary art centre, it makes publicly accessible important modern & contemporary private collections and aims to play an active role in the international art field."
+    },
+    {
+        "museum_name": "de Appel arts centre",
+        "country": "Netherlands",
+        "city": "Amsterdam 1011 AT",
+        "address": "Prins Hendrikkade 142",
+        "description": "Located in Amsterdam, de Appel arts centre is an international institution for contemporary art and diverse public programming. de Appel also hosts its own Curatorial Programme for young curators."
+    },
+    {
+        "museum_name": "Faurschou Foundation",
+        "country": "Denmark",
+        "city": "Nordhavn 2150",
+        "address": "Klubiensvej 11",
+        "description": "Faurschou Foundation is a privately owned art institution with a collection of contemporary art of the highest international standard. Faurschou Foundation has two exhibition spaces, one in Copenhagen’s North Harbour and one in Beijing’s attractive 798 Art District."
+    },
+    {
+        "museum_name": "Helen Frankenthaler Foundation",
+        "country": "United States",
+        "city": "New York, NY 10001",
+        "address": "134 West 26th Street, 5th Floor",
+        "description": "The Foundation is dedicated to encouraging knowledge of art including educating the public about the legacy of artist Helen Frankenthaler (1928-2011)."
+    },
+    {
+        "museum_name": "Museum of the City of New York",
+        "country": "United States",
+        "city": "New York, NY 10029",
+        "address": "1220 5th Ave",
+        "description": "Among the city’s museums there is only one with the words New, York, and City in its name, and this is what makes us unique: we explore the past of this fascinating and particular city and celebrate its heritage of diversity, opportunity, and perpetual transformation."
+    },
+    {
+        "museum_name": "Julia Stoschek Collection",
+        "country": "Germany",
+        "city": "Düsseldorf D 40549",
+        "address": "Schanzenstrasse 54",
+        "description": "The JULIA STOSCHEK COLLECTION is an international private collection of contemporary art with a focus on time-based media art. The collection opened in 2007 and comprises installations, videos, photographs, paintings and sculptures."
+    },
+    {
+        "museum_name": "Städel Museum",
+        "country": "Germany",
+        "city": "Frankfurt 60596",
+        "address": "Schaumainkai 63",
+        "description": "The Städel Museum is one of Germany’s oldest museums. Its rich collection offers a virtually complete survey of seven hundred years of European art from the early 14th century to the present, with focuses on the Renaissance, the Baroque, early Modern art and more."
+    },
+    {
+        "museum_name": "Wallraf-Richartz-Museum & Fondation Corboud",
+        "country": "Germany",
+        "city": "Cologne 50667",
+        "address": "Obenmarspforten 40",
+        "description": "The oldest museum in Cologne, the Wallraf-Richartz Museum holds one of the most extensive collections of medieval paintings. With the works of the Fondation Corboud the museum also houses the largest collection of Impressionist and Neo-Impressionist art in Germany."
+    },
+    {
+        "museum_name": "Pera Museum",
+        "country": "Istanbul 34443",
+        "city": "Tepebaşı - Beyoğlu",
+        "address": "Meşrutiyet Caddesi No.65",
+        "description": "Inaugurated on 8 June 2005, Pera Museum is a private museum founded by the Suna and İnan Kıraç Foundation. The aim of offering an outstanding range of diverse high quality culture and art services is as important today as when the Museum first opened its doors to the public."
+    },
+    {
+        "museum_name": "KW Institute for Contemporary Art",
+        "country": "Germany",
+        "city": "Berlin",
+        "address": "Auguststrasse 69,  D-10117 (Mitte)",
+        "description": "KW Institute for Contemporary Art is a place for the production and presentation of contemporary art, where the pressing questions of our time can be openly formulated and discussed."
+    },
+    {
+        "museum_name": "Hakanto Contemporary",
+        "country": "Madagascar",
+        "city": "Antananarivo 101",
+        "address": "Alhambra Gallery Ankadimbahoaka",
+        "description": "Under the artistic direction of Joël Andrianomearisoa, HAKANTO CONTEMPORARY is an independent, non-profit, artist-led space based in Antananarivo, Madagascar.A Fonds Yavarhoussen project."
+    },
+    {
+        "museum_name": "Modern Art Museum of Fort Worth",
+        "country": "United States",
+        "city": "Fort Worth, TX 76107",
+        "address": "3200 Darnell Street",
+        "description": "The Modern Art Museum of Fort Worth maintains one of the foremost collections of international modern and contemporary art in the country. Discover amazing contemporary works … displayed in a serene concrete and glass building surrounded by a magnificent reflecting pond."
+    },
+    {
+        "museum_name": "Padiglione d'Arte Contemporanea (PAC)",
+        "country": "Italy",
+        "city": "Milan 20121",
+        "address": "Via Palestro 14",
+        "description": "PAC is one of the first exhibition spaces in Italy fully dedicated to contemporary art. Through its work that began in 1979, it has always tried to generate discussions on art and to call the attention to the contemporary projects, casting a glance towards the future."
+    },
+    {
+        "museum_name": "Kunstmuseum Bern",
+        "country": "Switzerland",
+        "city": "Bern CH-3000",
+        "address": "Hodlerstrasse 8–12",
+        "description": "The oldest art museum in Switzerland, Kunstmuseum Bern boasts a stunning permanent collection of modern and contemporary artists. Highlights include works by Paul Klee, Pablo Picasso, Vincent van Gogh, Sophie Taeuber-Arp, Louise Bourgeois, Dieter Roth, and Marina Abramovic."
+    },
+    {
+        "museum_name": "The State Hermitage Museum",
+        "country": "Russia",
+        "city": "St. Petersburg 190000",
+        "address": "Dvortsovaya Naberezhnaya 34",
+        "description": "The State Hermitage Museum is situated in the center of St. Petersburg, and is the former state residence of the Russian emperors. The museum has a vast collection, numbering about three million works of art and monuments of world culture."
+    },
+    {
+        "museum_name": "La Casa Encendida",
+        "country": "Spain",
+        "city": "Madrid 28012",
+        "address": "Ronda de Valencia, 2",
+        "description": "La Casa Encendida is a social and cultural center run by Fundación Montemadrid. It hosts events focusing on the environment, culture, education and solidarity."
+    },
+    {
+        "museum_name": "AIGA",
+        "country": "United States",
+        "city": "New York, NY 10010",
+        "address": "164 Fifth Avenue (gallery permanently closed April 2015)",
+        "description": "AIGA, the professional association for design, advances design as a professional craft, strategic advantage and vital cultural force."
+    },
+    {
+        "museum_name": "Magasin III Museum & Foundation for Contemporary Art",
+        "country": "Sweden",
+        "city": "Stockholm 115 56",
+        "address": "Frihamnsgatan 28",
+        "description": "Founded in 1987, Magasin III is a private institution devoted to bringing international  contemporary art to Sweden. In addition to its ambitious exhibitions, the museum has a growing collection of works by internationally established artists."
+    },
+    {
+        "museum_name": "Ordrupgaard",
+        "country": "Denmark",
+        "city": "Charlottenlund DK-2920",
+        "address": "Vilvordevej 110",
+        "description": "Ordrupgaard is a museum for French Impressionism and Danish art from the Golden Age, as well as contemporary art and Danish design. Ordrupgaard's collection features artists like Monet, Gauguin and Hammershøi, as well as Jeppe Hein, Olafur Eliasson and Carsten Höller."
+    },
+    {
+        "museum_name": "Maison de l'Amérique Latine",
+        "country": "France",
+        "city": "Paris 75007",
+        "address": "217 boulevard Saint-Germain",
+        "description": "The \"Maison de l’Amérique latine\" is a chosen place to welcome, gather and exhibit the diplomatic and cultural Latin American community in Paris. It claims to be a crossroad for culture, a place for encounters, where all the artistic forms stand alongside each other."
+    },
+    {
+        "museum_name": "Henry Art Gallery",
+        "country": "Seattle, Washington 98195",
+        "city": "University of Washington",
+        "address": "15th Ave NE and NE 41st St",
+        "description": "The Henry Art Gallery (\"The Henry\") is the art museum of the University of Washington in Seattle, Washington, USA. Located along 15th Avenue N.E. in the University District, it was founded in February 1927, and was the first public art museum in the state of Washington."
+    },
+    {
+        "museum_name": "Leeum, Samsung Museum of Art",
+        "country": "Seoul 04348",
+        "city": "Yongsan-gu",
+        "address": "60-16 Itaewon-ro 55-gil",
+        "description": "Leeum is an art museum with a collection ranging from traditional Korean art to modern and contemporary art of the world."
+    },
+    {
+        "museum_name": "Museum of Islamic Art",
+        "country": "Qatar",
+        "city": "Doha 2777",
+        "address": "Doha",
+        "description": "The Museum of Islamic Art represents Islamic art from three continents over 1,400 years. MIA sheds light on our origins to illuminate our future. Through safeguarding masterpiece collections of Islamic art and showcasing extraordinary exhibitions."
+    },
+    {
+        "museum_name": "Frankfurt Am Main",
+        "country": "Germany",
+        "city": "Berlin 12045",
+        "address": "Wildenbruchstraße 15",
+        "description": "Berlin, with a focus on emerging international artists."
+    },
+    {
+        "museum_name": "American Folk Art Museum",
+        "country": "United States",
+        "city": "New York, NY 10023",
+        "address": "2 Lincoln Square",
+        "description": "Since 1961, the American Folk Art Museum has been the leading institution shaping the understanding of art by the self-taught through its exhibitions, publications, and educational programs."
+    },
+    {
+        "museum_name": "Hong Kong Arts Centre",
+        "country": "Hong Kong Wan Chai",
+        "city": "Hong Kong Arts Centre",
+        "address": "2 Harbour Road",
+        "description": "The mission of the Hong Kong Arts Centre is to nurture creativity, arts and cultural engagement through its two-pronged approach in promoting contemporary performing arts, visual arts as well as film and video arts and in providing lifelong and life-wide arts education."
+    },
+    {
+        "museum_name": "Protocinema",
+        "country": "United States",
+        "city": "New York, NY 10014",
+        "address": "New York City",
+        "description": "Protocinema is a cross-cultural art organization that commissions and presents site-aware art around the world. Our purpose is to support dialogue between cultures on equal footing and create opportunities for listening & expression."
+    },
+    {
+        "museum_name": "Museo Amparo",
+        "country": "Puebla, Puebla 72000",
+        "city": "Centro Histórico",
+        "address": "2 Sur 708",
+        "description": "Since 1991, we have presented to our visitors an encounter with the culture of Mexico, from the pre-Hispanic to the contemporary art."
+    },
+    {
+        "museum_name": "Musée national des arts asiatiques - Guimet",
+        "country": "France",
+        "city": "Paris 75116",
+        "address": "6 place d'Iéna",
+        "description": "The Musée national des arts décoratifs asiatique - Guimet presents one of the largest collections of Asian Art in Europe, spanning across Egypt, Greece, China, Japan, and Southeast Asia. The exquisite Buddhist Pantheon is devoted to religious works from China and Japan."
+    },
+    {
+        "museum_name": "Total Museum of Contemporary Art",
+        "country": "South Korea",
+        "city": "Seoul 110-848",
+        "address": "8, Pyeongchang 32Gil, Jongno-gu",
+        "description": "As Korea’s first private museum, the Total Museum of Contemporary Art is a a multicultural space that broadly accommodates various genres of art and culture as well as facilitating educational programs, book publications, lectures, workshops, and seminars."
+    },
+    {
+        "museum_name": "Edward Hopper House",
+        "country": "United States",
+        "city": "Nyack, NY 10960",
+        "address": "82 North Broadway",
+        "description": "The Edward Hopper House is the birthplace and family home of Edward Hopper, serving as a resource for scholars and artists and preserving the legacy and home of America’s most iconic artist."
+    },
+    {
+        "museum_name": "Leslie-Lohman Museum",
+        "country": "United States",
+        "city": "New York, NY 10013",
+        "address": "26 Wooster Street",
+        "description": "Created by our founders to preserve LGBTQ identity and build community, the Museum acts as a cultural hub for the LGBTQ community by aspiring to reclaim scholarship from a queer perspective. We are the world's only art museum dedicated to exhibit and preserve LGBTQ art."
+    },
+    {
+        "museum_name": "Kolumba Kunstmuseum",
+        "country": "Germany",
+        "city": "Cologne 50667",
+        "address": "Kolumbastraße 4",
+        "description": "In this unique setting that merges the ruins of the late Gothic church of St. Kolumba and modern architecture, Kolumba Museum showcases a unique exhibition program that presents art from antiquity through the present."
+    },
+    {
+        "museum_name": "The Showroom",
+        "country": "United Kingdom [U.K.]",
+        "city": "London NW8 8PQ",
+        "address": "63 Penfold Street",
+        "description": "The Showroom is a centre for contemporary art that is focused on a collaborative and process-driven approach to production."
+    },
+    {
+        "museum_name": "Recess",
+        "country": "United States",
+        "city": "New York, NY 10013",
+        "address": "41 Grand Street",
+        "description": "Recess is a nonprofit artists’ workspace open to the public.  At once a studio and exhibition space, Recess initiates lasting connections between artists and audiences, presenting ambitious projects that embrace experimentation and focus on process."
+    },
+    {
+        "museum_name": "Institute of Modern Art",
+        "country": "Brisbane, QLD 4006",
+        "city": "Fortitude Valley",
+        "address": "420 Brunswick Street",
+        "description": "The IMA has been the leading independent forum for contemporary art in Queensland, Australia, for forty years."
+    },
+    {
+        "museum_name": "Anya and Andrew Shiva Gallery, John Jay College",
+        "country": "United States",
+        "city": "New York, NY 10019",
+        "address": "John Jay College, Anya and Andrew Shiva Gallery, 860 11th Avenue",
+        "description": "The Anya and Andrew Shiva Gallery is the primary fine art gallery at John Jay College of Criminal Justice, a senior college of the City University of New York in Midtown Manhattan, New York City. The program feature a variety of media and concepts, but is heavily focused on social issues and the humanities. Opened in 2013, the gallery is 4,050 square feet and is located on the ground floor of John Jay's 620,000-square foot building that sits on 11th Avenue and 59th Street in New York City, a four block walk from Central Park. The building was designed by Skidmore, Owings, & Merrill.Gallery viewing hours are Monday through Friday from 10 AM - 6 PM."
+    },
+    {
+        "museum_name": "Indianapolis Museum of Art at Newfields",
+        "country": "United States",
+        "city": "Indianapolis, IN 46208",
+        "address": "4000 Michigan Road",
+        "description": "The Indianapolis Museum of Art at Newfields is among the ten largest and ten oldest general art museums in the nation."
+    },
+    {
+        "museum_name": "Museo Thyssen-Bornemisza",
+        "country": "Spain",
+        "city": "Madrid 28014",
+        "address": "Paseo del Prado, 8",
+        "description": "Duccio, Van Eyck, Carpaccio, Lucas Cranach, Dürer, Caravaggio, Rubens, Frans Hals, Van Gogh, Gauguin, Kirchner, Mondrian, Klee, Hopper, Rauschenberg ... These are just some of the great masters of art history whose works are on display at the Thyssen-Bornemisza Museum."
+    },
+    {
+        "museum_name": "The FLAG Art Foundation",
+        "country": "United States",
+        "city": "New York, NY 10001",
+        "address": "545 W 25th St",
+        "description": "FLAG is an exhibition space for contemporary art. The program includes 4 to 6 professionally-curated shows per year featuring works by established and emerging international artists. Our objective is to encourage the appreciation of contemporary art among a diverse audience."
+    },
+    {
+        "museum_name": "High Line Art",
+        "country": "United States",
+        "city": "New York, NY",
+        "address": "Gansevoort Street to West 34th Street, between 10th & 11th Avenues",
+        "description": "Presented by Friends of the High Line, High Line Art commissions and produces public art projects on and around the High Line. Curated by Cecilia Alemani, the Donald R. Mullen, Jr. Curator & Director of High Line Art."
+    },
+    {
+        "museum_name": "UrbanGlass",
+        "country": "United States",
+        "city": "Brooklyn, NY 11217",
+        "address": "647 Fulton Street",
+        "description": "Through studios, classes, exhibitions, and publishing, UrbanGlass is committed to furthering the use of glass as a creative medium."
+    },
+    {
+        "museum_name": "Arts at MIT",
+        "country": "United States",
+        "city": "Cambridge, MA 02139",
+        "address": "77 Massachusetts Avenue",
+        "description": "The Arts at MIT are rooted in experimentation, risk-taking and imaginative problem-solving."
+    },
+    {
+        "museum_name": "Los Angeles County Museum of Art",
+        "country": "United States",
+        "city": "Los Angeles, CA 90036",
+        "address": "5905 Wilshire Boulevard",
+        "description": "With 100,000 objects dating from ancient times to the present, the Los Angeles County Museum of Art (LACMA) is the largest art museum in the western United States."
+    }
+]
