@@ -103,7 +103,7 @@ class MuseumsSpider(scrapy.Spider):
             "country": country,
             "city": city,
             "address": address,
-            # "description": description
+            "description": description
         }
 
 def clean_text(text):
