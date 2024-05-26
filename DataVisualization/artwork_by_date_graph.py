@@ -4,7 +4,7 @@ import pandas as pd
 import re
 
 # we load json data
-with open('artwork.json') as f:
+with open('DataVisualization/artwork.json') as f:
     artworks = json.load(f)
 
 

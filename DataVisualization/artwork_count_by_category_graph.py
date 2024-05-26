@@ -2,7 +2,7 @@ import json
 import plotly.express as px
 
 # we load json file
-with open('artworkCount.json') as f:
+with open('DataVisualization/artworkCount.json') as f:
     data = json.load(f)
 
 # we create list for number of categories and artworks

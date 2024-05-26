@@ -3,7 +3,7 @@ import pandas as pd
 import plotly.express as px
 
 # we load json data
-with open('artworkPrice.json') as f:
+with open('DataVisualization/artworkPrice.json') as f:
     data = json.load(f)
 
 # we convert dataframe

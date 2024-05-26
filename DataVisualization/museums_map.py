@@ -3,7 +3,7 @@ import folium
 import requests
 
 # we load museums json data
-with open('museums.json') as f:
+with open('DataVisualization/museums.json') as f:
     museums = json.load(f)
 
 # we convert museums addres to coordinates by using  Nominatim API
@@ -34,4 +34,4 @@ for museum in museums:
         ).add_to(map)
 
 # we create html code and map
-map.save('museums_map.html')
+map.save('DataVisualization/museums_map.html')
