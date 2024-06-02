@@ -96,7 +96,7 @@ class MuseumsSpider(scrapy.Spider):
         address = response.meta['address']
         description = response.css('.Box-sc-15se88d-0.Text-sc-18gcpao-0.bTA-dFE.cgchZM::text').get()
 
-        description = clean_text(description)  # Temizleme işlemi
+        description = clean_text(description)  # Temizleme işlemi yapılıyor
 
         yield {
             "museum_name": museum_name,
@@ -108,5 +108,5 @@ class MuseumsSpider(scrapy.Spider):
 
 def clean_text(text):
     if text:
-        return text.strip().replace("\r", "").replace("\n", "").replace("\\", "")  # Çift ters eğik çizgiyi kaldırma işlemi
+        return text.strip().replace("\r", "").replace("\n", "").replace("\\", "")  # Çift ters eğik çizgiyi kaldırma işlemi (edit text )
     return text
