@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta -->
+    <title>Artists - ARTNEST</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Açıklamanız">
+    <meta name="keywords" content="Anahtar kelimeleriniz">
+    <meta name="author" content="Yazarınız">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Styles -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/animate/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="navigation container-fluid">
+        <div class="row justify-content-md-center ">
+            <div class="col-md-10 col-sm-12">
+                <nav class="navbar navbar-default">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="img/logo-black.png" height="22" alt="Logo">
+                    </a>
+                    <div class="button_container" id="toggle">
+                        <span class="black top"></span>
+                        <span class="black middle"></span>
+                        <span class="black bottom"></span>
+                    </div>
+                    <div class="overlay" id="overlay">
+                        <nav class="overlay-menu">
+                            <ul>
+                                <li> <a href="./index.html">Main Page</a></li>
+                                <li> <a href="./museums.html">Map of Museums</a></li>
+                                <li> <a href="./artworks.html">Artworks</a></li>
+                                <li> <a href="./artists.html">Artists</a></li>
+                                <li> <a href="./graphs.html">Graphs</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- End Navbar -->
+
+
+    <!-- Artist List Title -->
+    <div class="searchBar container mt-5">
+        <h3 class="text-center mb-4">ARTIST LIST</h3>
+
+        <!-- Search Box -->
+        <div class="input-group mb-3">
+            <input type="text" id="searchInput" class="form-control" placeholder="Search for Artists">
+        </div>
+    </div>
+
+
+    <!-- Kategori ve Sanatçı Butonları Container -->
+    <div id="categories-container" class="container-fluid pt-3">
+        <!-- Bu alana kategori ve sanatçı butonları dinamik olarak eklenecek -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer mt-5 py-4">
+        <div class="container-fluid footer ">
+            <div class="row">
+                <div class="col-xl-2 col-md-8 offset-md-1 col-sm-12 ">
+                    <p>
+                        <a href="about.html">About</a><br>
+                        <a href="story.html">Story</a><br>
+                        <a href="services.html">Services</a><br>
+                        <a href="contacts.html">Contacts</a><br>
+                    </p>
+                </div>
+                <div class="col-xl-2 col-md-8 offset-md-1 col-sm-12 ">
+                    <p>
+                        <a href="index.html">Privacy</a><br>
+                        <a href="index.html">Termini di utilizzo </a><br>
+                        <a href="index.html">Note legali </a><br>
+                        <a href="index.html">Credits</a><br>
+                    </p>
+                </div>
+                <div class="col-xl-2 col-md-8 offset-md-1 col-sm-12">
+                    <p>
+                        FONDAZIONE ARTNEST<br>
+                        Ataturk Street, No: 116<br>
+                        00048 - MUGLA (TURKEY)<br>
+                        TEL. +90 888 999 77 11
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- JavaScript -->
+    <script src="js/artists.js"></script>
+    <script src="vendor/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+
+    <!-- End JavaScript -->
+</body>
+
+</html>

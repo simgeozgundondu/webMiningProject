@@ -1,0 +1,1504 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+   <title>Museums - ARTNEST</title>
+   <meta charset="UTF-8">
+   <meta name="description" content="Free HTML template">
+   <meta name="keywords" content="HTML, template, free">
+   <meta name="author" content="Nicola Tolin">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- Styles -->
+   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+   <link href="vendor/animate/animate.css" rel="stylesheet" type="text/css" />
+   <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5aa3a691b60e55e5e33f56b6e5555750 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    <!-- Navbar -->
+   <div class="navigation container-fluid">
+    <div class="row justify-content-md-center ">
+       <div class="col-md-10 col-sm-12">
+          <nav class="museum navbar navbar-default">
+             <a class="navbar-brand" href="index.html">
+                <img src="img/logo-black.png" height="22" alt="Logo">
+             </a>
+             <div class="button_container" id="toggle">
+                <span class="black top"></span>
+                <span class="black middle"></span>
+                <span class="black bottom"></span>
+             </div>
+             <div class="overlay" id="overlay">
+                <nav class="overlay-menu">
+                    <ul>
+                        <li> <a href="./index.html">Main Page</a></li>
+                        <li> <a href="./museums.html">Map of Museums</a></li>
+                        <li> <a href="./artworks.html">Artworks</a></li>
+                        <li> <a href="./artists.html">Artists</a></li>
+                        <li> <a href="./graphs.html">Graphs</a></li>
+                    </ul>
+                </nav>
+             </div>
+          </nav>
+       </div>
+    </div>
+ </div>
+    
+            <div class="folium-map" id="map_5aa3a691b60e55e5e33f56b6e5555750" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_5aa3a691b60e55e5e33f56b6e5555750 = L.map(
+                "map_5aa3a691b60e55e5e33f56b6e5555750",
+                {
+                    center: [0.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 2,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_85f3a52528077211b900dedefc4435b1 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_85f3a52528077211b900dedefc4435b1.addTo(map_5aa3a691b60e55e5e33f56b6e5555750);
+        
+    
+            var marker_0fce537578a79d5833052e6fb194c6e1 = L.marker(
+                [31.1840995, 121.4593289],
+                {}
+            ).addTo(map_5aa3a691b60e55e5e33f56b6e5555750);
+        
+    
+        var popup_fa13f953606cdc6ebc2e48ee544c344f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6af80f94c26948b4321749fb21b40742 = $(`<div id="html_6af80f94c26948b4321749fb21b40742" style="width: 100.0%; height: 100.0%;">Qiao Space</div>`)[0];
+                popup_fa13f953606cdc6ebc2e48ee544c344f.setContent(html_6af80f94c26948b4321749fb21b40742);
+            
+        
+
+        marker_0fce537578a79d5833052e6fb194c6e1.bindPopup(popup_fa13f953606cdc6ebc2e48ee544c344f)
+        ;
+
+        
+    
+    
+            marker_0fce537578a79d5833052e6fb194c6e1.bindTooltip(
+                `<div>
+                     2555-5, Long Teng Ave., Shanghai 200232, China
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ddefe75ec5011e0a02f433919938b8f1 = L.marker(
+                [40.7182804, -73.99905169267399],
+                {}
+            ).addTo(map_5aa3a691b60e55e5e33f56b6e5555750);
+        
+    
+        var popup_0e514d6888222545473845e2df76a277 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_639d02b7b82f397ef751bca7e5065f7c = $(`<div id="html_639d02b7b82f397ef751bca7e5065f7c" style="width: 100.0%; height: 100.0%;">Baxter Street at the Camera Club of New York</div>`)[0];
+                popup_0e514d6888222545473845e2df76a277.setContent(html_639d02b7b82f397ef751bca7e5065f7c);
+            
+        
+
+        marker_ddefe75ec5011e0a02f433919938b8f1.bindPopup(popup_0e514d6888222545473845e2df76a277)
+        ;
+
+        
+    
+    
+            marker_ddefe75ec5011e0a02f433919938b8f1.bindTooltip(
+                `<div>
+                     128 Baxter St, New York, NY 10013, United States
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ee94b9e79d19781cf27cd9d4dc8b8b84 = L.marker(
+                [49.423105, 2.8125714],
+                {}
+            ).addTo(map_5aa3a691b60e55e5e33f56b6e5555750);
+        
+    
+        var popup_d1fee7ee98cde9a28ea278945b5fc159 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b007d3bbf41a7084bad9420f0b4a7741 = $(`<div id="html_b007d3bbf41a7084bad9420f0b4a7741" style="width: 100.0%; height: 100.0%;">Musées et domaine nationaux du palais de Compiègne</div>`)[0];
+                popup_d1fee7ee98cde9a28ea278945b5fc159.setContent(html_b007d3bbf41a7084bad9420f0b4a7741);
+            
+        
+
+        marker_ee94b9e79d19781cf27cd9d4dc8b8b84.bindPopup(popup_d1fee7ee98cde9a28ea278945b5fc159)
+        ;
+
+        
+    
+    
+            marker_ee94b9e79d19781cf27cd9d4dc8b8b84.bindTooltip(
+                `<div>
+                     Place du General de Gaulle, Compiègne 60200, France
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3134fe84d6c6e615c5a3f5648ed27e1f = L.marker(
+                [40.7127281, -74.0060152],
+                {}
+            ).addTo(map_5aa3a691b60e55e5e33f56b6e5555750);
+        
+    
+        var popup_b511c47bb0be0413d5adef47d6731d90 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2615ea2e335c9925754051ee6c6a0cee = $(`<div id="html_2615ea2e335c9925754051ee6c6a0cee" style="width: 100.0%; height: 100.0%;">Protocinema</div>`)[0];
+                popup_b511c47bb0be0413d5adef47d6731d90.setContent(html_2615ea2e335c9925754051ee6c6a0cee);
+            
+        
+
+        marker_3134fe84d6c6e615c5a3f5648ed27e1f.bindPopup(popup_b511c47bb0be0413d5adef47d6731d90)
+        ;
+
+        
+    
+    
+            marker_3134fe84d6c6e615c5a3f5648ed27e1f.bindTooltip(
+                `<div>
+                     New York City, New York, NY 10014, United States
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9ee7a6011c4482656f34c1e619bf952b = L.marker(
+                [50.93741045, 6.958443355836139],
+                {}
+            ).addTo(map_5aa3a691b60e55e5e33f56b6e5555750);
+        
+    
+        var popup_0fcc563c94bb7e63ceb214f6a4c4f506 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ef8cce17b0c476494b464c953ded9560 = $(`<div id="html_ef8cce17b0c476494b464c953ded9560" style="width: 100.0%; height: 100.0%;">Wallraf-Richartz-Museum & Fondation Corboud</div>`)[0];
+                popup_0fcc563c94bb7e63ceb214f6a4c4f506.setContent(html_ef8cce17b0c476494b464c953ded9560);
+            
+        
+
+        marker_9ee7a6011c4482656f34c1e619bf952b.bindPopup(popup_0fcc563c94bb7e63ceb214f6a4c4f506)
+        ;
+
+        
+    
+    
+            marker_9ee7a6011c4482656f34c1e619bf952b.bindTooltip(
+                `<div>
+                     Obenmarspforten 40, Cologne 50667, Germany
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_70c3e76ba3ea38d589312b9dcadfc822 = L.marker(
+                [51.01002615, 3.598707798286333],
+                {}
+            ).addTo(map_5aa3a691b60e55e5e33f56b6e5555750);
+        
+    
+        var popup_802d73c1573fdccbc34536326a86a6f4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0f196b944834a1fd41f9a72042cb1560 = $(`<div id="html_0f196b944834a1fd41f9a72042cb1560" style="width: 100.0%; height: 100.0%;">Museum Dhondt-Dhaenens</div>`)[0];
+                popup_802d73c1573fdccbc34536326a86a6f4.setContent(html_0f196b944834a1fd41f9a72042cb1560);
+            
+        
+
+        marker_70c3e76ba3ea38d589312b9dcadfc822.bindPopup(popup_802d73c1573fdccbc34536326a86a6f4)
+        ;
+
+        
+    
+    
+            marker_70c3e76ba3ea38d589312b9dcadfc822.bindTooltip(
+                `<div>
+                     Museumlaan 14, Deurle 9831, Belgium
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_03f355c6a0d8c72efc6e33da88829abf = L.marker(
+                [40.7498665, -74.005004],
+                {}
+            ).addTo(map_5aa3a691b60e55e5e33f56b6e5555750);
+        
+    
+        var popup_adeaa2fcf8666aedda056e0b83005246 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ac4e958bedc40a59b4fef42c065f78d6 = $(`<div id="html_ac4e958bedc40a59b4fef42c065f78d6" style="width: 100.0%; height: 100.0%;">The FLAG Art Foundation</div>`)[0];
+                popup_adeaa2fcf8666aedda056e0b83005246.setContent(html_ac4e958bedc40a59b4fef42c065f78d6);
+            
+        
+
+        marker_03f355c6a0d8c72efc6e33da88829abf.bindPopup(popup_adeaa2fcf8666aedda056e0b83005246)
+        ;
+
+        
+    
+    
+            marker_03f355c6a0d8c72efc6e33da88829abf.bindTooltip(
+                `<div>
+                     545 W 25th St, New York, NY 10001, United States
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5c40ed53dbc892ed71e52ff0ee616db5 = L.marker(
+                [52.520862, 13.398266124901008],
+                {}
+            ).addTo(map_5aa3a691b60e55e5e33f56b6e5555750);
+        
+    
+        var popup_fafc2fb55141c82f6bc22b7e974cb3ec = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_80389d50a0466e0699780804c7fb471c = $(`<div id="html_80389d50a0466e0699780804c7fb471c" style="width: 100.0%; height: 100.0%;">Pergamonmuseum</div>`)[0];
+                popup_fafc2fb55141c82f6bc22b7e974cb3ec.setContent(html_80389d50a0466e0699780804c7fb471c);
+            
+        
+
+        marker_5c40ed53dbc892ed71e52ff0ee616db5.bindPopup(popup_fafc2fb55141c82f6bc22b7e974cb3ec)
+        ;
+
+        
+    
+    
+            marker_5c40ed53dbc892ed71e52ff0ee616db5.bindTooltip(
+                `<div>
+                     Bodestraße 1-3, 10178, Berlin, Germany
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9e0f26917571367a27a363b374b30af5 = L.marker(
+                [47.614791303957155, -122.20153343434389],
+                {}
+            ).addTo(map_5aa3a691b60e55e5e33f56b6e5555750);
+        
+    
+        var popup_695a964a329ec16ce591aae64313fcf1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a87aa7856ab9a4770d3ca4633093a8cd = $(`<div id="html_a87aa7856ab9a4770d3ca4633093a8cd" style="width: 100.0%; height: 100.0%;">Bellevue Arts Museum</div>`)[0];
+                popup_695a964a329ec16ce591aae64313fcf1.setContent(html_a87aa7856ab9a4770d3ca4633093a8cd);
+            
+        
+
+        marker_9e0f26917571367a27a363b374b30af5.bindPopup(popup_695a964a329ec16ce591aae64313fcf1)
+        ;
+
+        
+    
+    
+            marker_9e0f26917571367a27a363b374b30af5.bindTooltip(
+                `<div>
+                     510 Bellevue Way NE, Bellevue, Washington 98004, United States
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7e6e17d7331fedc5ec1e8fcd435a0df7 = L.marker(
+                [40.784284299999996, -73.95769902873573],
+                {}
+            ).addTo(map_5aa3a691b60e55e5e33f56b6e5555750);
+        
+    
+        var popup_edd5de1aaa4ffbaa3a530419ac9833d2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a144b01ec589a3047da983b1ad8ee5bb = $(`<div id="html_a144b01ec589a3047da983b1ad8ee5bb" style="width: 100.0%; height: 100.0%;">Cooper Hewitt, Smithsonian Design Museum</div>`)[0];
+                popup_edd5de1aaa4ffbaa3a530419ac9833d2.setContent(html_a144b01ec589a3047da983b1ad8ee5bb);
+            
+        
+
+        marker_7e6e17d7331fedc5ec1e8fcd435a0df7.bindPopup(popup_edd5de1aaa4ffbaa3a530419ac9833d2)
+        ;
+
+        
+    
+    
+            marker_7e6e17d7331fedc5ec1e8fcd435a0df7.bindTooltip(
+                `<div>
+                     2 East 91st Street, New York, NY 10128, United States
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_372493895383ec13bfb74ea3fb93d696 = L.marker(
+                [-33.9082485, 18.4222616],
+                {}
+            ).addTo(map_5aa3a691b60e55e5e33f56b6e5555750);
+        
+    
+        var popup_0885fe4e252829bfd7d01ec676ec9ce6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7809c9630405e71b48f0ac730f39be60 = $(`<div id="html_7809c9630405e71b48f0ac730f39be60" style="width: 100.0%; height: 100.0%;">Zeitz MOCAA</div>`)[0];
+                popup_0885fe4e252829bfd7d01ec676ec9ce6.setContent(html_7809c9630405e71b48f0ac730f39be60);
+            
+        
+
+        marker_372493895383ec13bfb74ea3fb93d696.bindPopup(popup_0885fe4e252829bfd7d01ec676ec9ce6)
+        ;
+
+        
+    
+    
+            marker_372493895383ec13bfb74ea3fb93d696.bindTooltip(
+                `<div>
+                     Silo District, V&A Waterfront, Cape Town, Western Cape 8002
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6b11b82d323d001c41e52ede72a1398e = L.marker(
+                [55.6926053, 12.5859721],
+                {}
+            ).addTo(map_5aa3a691b60e55e5e33f56b6e5555750);
+        
+    
+        var popup_383994dfd0e3bc728e935afd237992aa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d392e1962e3d4ba9be47f3d80b813c03 = $(`<div id="html_d392e1962e3d4ba9be47f3d80b813c03" style="width: 100.0%; height: 100.0%;">Den Frie Centre of Contemporary Art</div>`)[0];
+                popup_383994dfd0e3bc728e935afd237992aa.setContent(html_d392e1962e3d4ba9be47f3d80b813c03);
+            
+        
+
+        marker_6b11b82d323d001c41e52ede72a1398e.bindPopup(popup_383994dfd0e3bc728e935afd237992aa)
+        ;
+
+        
+    
+    
+            marker_6b11b82d323d001c41e52ede72a1398e.bindTooltip(
+                `<div>
+                     Oslo Pl. 1, Copenhagen 2100, Denmark
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_019b8c49348ce1a69679478df7013c58 = L.marker(
+                [40.81860135, -74.22423804908564],
+                {}
+            ).addTo(map_5aa3a691b60e55e5e33f56b6e5555750);
+        
+    
+        var popup_daa1b2b1f2cdb65f7992ad0abf391a96 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4b107daeacd4c6612caea11eff42078e = $(`<div id="html_4b107daeacd4c6612caea11eff42078e" style="width: 100.0%; height: 100.0%;">Montclair Art Museum</div>`)[0];
+                popup_daa1b2b1f2cdb65f7992ad0abf391a96.setContent(html_4b107daeacd4c6612caea11eff42078e);
+            
+        
+
+        marker_019b8c49348ce1a69679478df7013c58.bindPopup(popup_daa1b2b1f2cdb65f7992ad0abf391a96)
+        ;
+
+        
+    
+    
+            marker_019b8c49348ce1a69679478df7013c58.bindTooltip(
+                `<div>
+                     3 South Mountain Avenue, Montclair, NJ 07042, United States
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b080c3a45f3fbe78dfce413a5ae51874 = L.marker(
+                [39.2138905, -79.6371124],
+                {}
+            ).addTo(map_5aa3a691b60e55e5e33f56b6e5555750);
+        
+    
+        var popup_1b3cdfe8b4751484384d079c4fe08fb7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0d869a7c7a425c49351e8fcc77bd25ff = $(`<div id="html_0d869a7c7a425c49351e8fcc77bd25ff" style="width: 100.0%; height: 100.0%;">Clark House Initiative</div>`)[0];
+                popup_1b3cdfe8b4751484384d079c4fe08fb7.setContent(html_0d869a7c7a425c49351e8fcc77bd25ff);
+            
+        
+
+        marker_b080c3a45f3fbe78dfce413a5ae51874.bindPopup(popup_1b3cdfe8b4751484384d079c4fe08fb7)
+        ;
+
+        
+    
+    
+            marker_b080c3a45f3fbe78dfce413a5ae51874.bindTooltip(
+                `<div>
+                     Location & Directions c/o RBT Group, Ground Floor, Clark House building, Colaba 8 Nathalal Parekh Marg (Old Wodehouse Road), Mumbai 400039, India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d6ea13096c4d7c10860b09d473468e27 = L.marker(
+                [37.5836238, 126.9818758],
+                {}
+            ).addTo(map_5aa3a691b60e55e5e33f56b6e5555750);
+        
+    
+        var popup_32638357cb8ae2c7ecfd244a616597cb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_605af09e60eafc8553f7874b217896c7 = $(`<div id="html_605af09e60eafc8553f7874b217896c7" style="width: 100.0%; height: 100.0%;">National Museum of Modern and Contemporary Art, Korea</div>`)[0];
+                popup_32638357cb8ae2c7ecfd244a616597cb.setContent(html_605af09e60eafc8553f7874b217896c7);
+            
+        
+
+        marker_d6ea13096c4d7c10860b09d473468e27.bindPopup(popup_32638357cb8ae2c7ecfd244a616597cb)
+        ;
+
+        
+    
+    
+            marker_d6ea13096c4d7c10860b09d473468e27.bindTooltip(
+                `<div>
+                     30 Samcheong-ro, Sogyeok-dong, Jongno-gu, Seoul 03062, South Korea
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5d39e3994d20fb25fc04e06da0fc2178 = L.marker(
+                [41.8796009, -87.62308280420407],
+                {}
+            ).addTo(map_5aa3a691b60e55e5e33f56b6e5555750);
+        
+    
+        var popup_bac2f1a6c15eca3ad35df2749467cf09 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0b79d5b5b9ff035b5d1652d92bddd656 = $(`<div id="html_0b79d5b5b9ff035b5d1652d92bddd656" style="width: 100.0%; height: 100.0%;">Art Institute of Chicago</div>`)[0];
+                popup_bac2f1a6c15eca3ad35df2749467cf09.setContent(html_0b79d5b5b9ff035b5d1652d92bddd656);
+            
+        
+
+        marker_5d39e3994d20fb25fc04e06da0fc2178.bindPopup(popup_bac2f1a6c15eca3ad35df2749467cf09)
+        ;
+
+        
+    
+    
+            marker_5d39e3994d20fb25fc04e06da0fc2178.bindTooltip(
+                `<div>
+                     111 S Michigan Ave., Chicago, IL 60603, United States
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3a8f1434e42934284dc1f3fbd3fd46a7 = L.marker(
+                [51.2016979, 4.4129001],
+                {}
+            ).addTo(map_5aa3a691b60e55e5e33f56b6e5555750);
+        
+    
+        var popup_70bcfd8094757d15d8b0e5264ae90925 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5c14d19fef74b30fd805efe459107f05 = $(`<div id="html_5c14d19fef74b30fd805efe459107f05" style="width: 100.0%; height: 100.0%;">Maurice Verbaet Center</div>`)[0];
+                popup_70bcfd8094757d15d8b0e5264ae90925.setContent(html_5c14d19fef74b30fd805efe459107f05);
+            
+        
+
+        marker_3a8f1434e42934284dc1f3fbd3fd46a7.bindPopup(popup_70bcfd8094757d15d8b0e5264ae90925)
+        ;
+
+        
+    
+    
+            marker_3a8f1434e42934284dc1f3fbd3fd46a7.bindTooltip(
+                `<div>
+                     Mechelsesteenweg 64 A, Antwerpen 2018, Belgium
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2bdedda00f149426a599171f8eb82df0 = L.marker(
+                [34.1013347, -118.33183738175424],
+                {}
+            ).addTo(map_5aa3a691b60e55e5e33f56b6e5555750);
+        
+    
+        var popup_ca04225103501474af500fdb642b3466 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1867ea31d8378c63aeec899c321af635 = $(`<div id="html_1867ea31d8378c63aeec899c321af635" style="width: 100.0%; height: 100.0%;">Los Angeles Contemporary Exhibitions</div>`)[0];
+                popup_ca04225103501474af500fdb642b3466.setContent(html_1867ea31d8378c63aeec899c321af635);
+            
+        
+
+        marker_2bdedda00f149426a599171f8eb82df0.bindPopup(popup_ca04225103501474af500fdb642b3466)
+        ;
+
+        
+    
+    
+            marker_2bdedda00f149426a599171f8eb82df0.bindTooltip(
+                `<div>
+                     6522 Hollywood Blvd., Los Angeles, CA 90028, United States
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6326eebc0195f8b46c1d8f8ba7c81c28 = L.marker(
+                [55.710048, 12.599495],
+                {}
+            ).addTo(map_5aa3a691b60e55e5e33f56b6e5555750);
+        
+    
+        var popup_1538430f8593df91c9ae313f7e64aa65 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8993036754a729a37e0284b885782bf4 = $(`<div id="html_8993036754a729a37e0284b885782bf4" style="width: 100.0%; height: 100.0%;">Faurschou Foundation</div>`)[0];
+                popup_1538430f8593df91c9ae313f7e64aa65.setContent(html_8993036754a729a37e0284b885782bf4);
+            
+        
+
+        marker_6326eebc0195f8b46c1d8f8ba7c81c28.bindPopup(popup_1538430f8593df91c9ae313f7e64aa65)
+        ;
+
+        
+    
+    
+            marker_6326eebc0195f8b46c1d8f8ba7c81c28.bindTooltip(
+                `<div>
+                     Klubiensvej 11, Nordhavn 2150, Denmark
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0cf07b0f6779eeea800d39e37f19d853 = L.marker(
+                [52.3733532, 4.9062722],
+                {}
+            ).addTo(map_5aa3a691b60e55e5e33f56b6e5555750);
+        
+    
+        var popup_5e2c4e86e6c747650a1a8a47d32a6f1d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c41309ae370b0469b53626e7162bb85a = $(`<div id="html_c41309ae370b0469b53626e7162bb85a" style="width: 100.0%; height: 100.0%;">de Appel arts centre</div>`)[0];
+                popup_5e2c4e86e6c747650a1a8a47d32a6f1d.setContent(html_c41309ae370b0469b53626e7162bb85a);
+            
+        
+
+        marker_0cf07b0f6779eeea800d39e37f19d853.bindPopup(popup_5e2c4e86e6c747650a1a8a47d32a6f1d)
+        ;
+
+        
+    
+    
+            marker_0cf07b0f6779eeea800d39e37f19d853.bindTooltip(
+                `<div>
+                     Prins Hendrikkade 142, Amsterdam 1011 AT, Netherlands
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_651f2e7adc7c8914d8a5dd02470ee0a3 = L.marker(
+                [40.792516250000006, -73.95180912958764],
+                {}
+            ).addTo(map_5aa3a691b60e55e5e33f56b6e5555750);
+        
+    
+        var popup_168e251abd5ef14b06ed8ecbe76cfa91 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3fa770fcb5954f3915696f2b4e1b681f = $(`<div id="html_3fa770fcb5954f3915696f2b4e1b681f" style="width: 100.0%; height: 100.0%;">Museum of the City of New York</div>`)[0];
+                popup_168e251abd5ef14b06ed8ecbe76cfa91.setContent(html_3fa770fcb5954f3915696f2b4e1b681f);
+            
+        
+
+        marker_651f2e7adc7c8914d8a5dd02470ee0a3.bindPopup(popup_168e251abd5ef14b06ed8ecbe76cfa91)
+        ;
+
+        
+    
+    
+            marker_651f2e7adc7c8914d8a5dd02470ee0a3.bindTooltip(
+                `<div>
+                     1220 5th Ave, New York, NY 10029, United States
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_53942cf45cf8bf8da4df481214ed6e30 = L.marker(
+                [51.23206485, 6.743006900000003],
+                {}
+            ).addTo(map_5aa3a691b60e55e5e33f56b6e5555750);
+        
+    
+        var popup_84c7ed551025310243c2f3b0d0faede2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d2c9a2f8ee6a9e995e37815244224cbb = $(`<div id="html_d2c9a2f8ee6a9e995e37815244224cbb" style="width: 100.0%; height: 100.0%;">Julia Stoschek Collection</div>`)[0];
+                popup_84c7ed551025310243c2f3b0d0faede2.setContent(html_d2c9a2f8ee6a9e995e37815244224cbb);
+            
+        
+
+        marker_53942cf45cf8bf8da4df481214ed6e30.bindPopup(popup_84c7ed551025310243c2f3b0d0faede2)
+        ;
+
+        
+    
+    
+            marker_53942cf45cf8bf8da4df481214ed6e30.bindTooltip(
+                `<div>
+                     Schanzenstrasse 54, Düsseldorf D 40549, Germany
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_76551af4f2e04f3915fcc89f253c59ee = L.marker(
+                [50.10321865, 8.673820296538516],
+                {}
+            ).addTo(map_5aa3a691b60e55e5e33f56b6e5555750);
+        
+    
+        var popup_d0cde19475b38eee675dfb26f6d18684 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6200eb2b528ad9d19ac92881469c0b6e = $(`<div id="html_6200eb2b528ad9d19ac92881469c0b6e" style="width: 100.0%; height: 100.0%;">Städel Museum</div>`)[0];
+                popup_d0cde19475b38eee675dfb26f6d18684.setContent(html_6200eb2b528ad9d19ac92881469c0b6e);
+            
+        
+
+        marker_76551af4f2e04f3915fcc89f253c59ee.bindPopup(popup_d0cde19475b38eee675dfb26f6d18684)
+        ;
+
+        
+    
+    
+            marker_76551af4f2e04f3915fcc89f253c59ee.bindTooltip(
+                `<div>
+                     Schaumainkai 63, Frankfurt 60596, Germany
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e36e8e2dff1727f1b4957576f55e6db1 = L.marker(
+                [40.73704395, -73.99461194850592],
+                {}
+            ).addTo(map_5aa3a691b60e55e5e33f56b6e5555750);
+        
+    
+        var popup_5a48ec3dcb97eecc1452d239e83259aa = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_29ee60dc2671da90e292a2b5085f7023 = $(`<div id="html_29ee60dc2671da90e292a2b5085f7023" style="width: 100.0%; height: 100.0%;">Tibet House US</div>`)[0];
+                popup_5a48ec3dcb97eecc1452d239e83259aa.setContent(html_29ee60dc2671da90e292a2b5085f7023);
+            
+        
+
+        marker_e36e8e2dff1727f1b4957576f55e6db1.bindPopup(popup_5a48ec3dcb97eecc1452d239e83259aa)
+        ;
+
+        
+    
+    
+            marker_e36e8e2dff1727f1b4957576f55e6db1.bindTooltip(
+                `<div>
+                     22 West 15th Street, New York, NY 10011, United States
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_76cdb2ba3a04b60854284053e9e33c24 = L.marker(
+                [48.8573574, 2.3239707],
+                {}
+            ).addTo(map_5aa3a691b60e55e5e33f56b6e5555750);
+        
+    
+        var popup_fed183ca442f4c0368ce9c0f13cb33a0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f06cfa7640db1c6576e5ed50805d92a6 = $(`<div id="html_f06cfa7640db1c6576e5ed50805d92a6" style="width: 100.0%; height: 100.0%;">Maison de l'Amérique Latine</div>`)[0];
+                popup_fed183ca442f4c0368ce9c0f13cb33a0.setContent(html_f06cfa7640db1c6576e5ed50805d92a6);
+            
+        
+
+        marker_76cdb2ba3a04b60854284053e9e33c24.bindPopup(popup_fed183ca442f4c0368ce9c0f13cb33a0)
+        ;
+
+        
+    
+    
+            marker_76cdb2ba3a04b60854284053e9e33c24.bindTooltip(
+                `<div>
+                     217 boulevard Saint-Germain, Paris 75007, France
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_19df4bbd7052c2de282dca16a382d30e = L.marker(
+                [45.4729115, 9.1995282],
+                {}
+            ).addTo(map_5aa3a691b60e55e5e33f56b6e5555750);
+        
+    
+        var popup_e0d7683228460c6fe1c13029f78d991b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8176a634a3e8d1924931f23df4c7d04f = $(`<div id="html_8176a634a3e8d1924931f23df4c7d04f" style="width: 100.0%; height: 100.0%;">Padiglione d'Arte Contemporanea (PAC)</div>`)[0];
+                popup_e0d7683228460c6fe1c13029f78d991b.setContent(html_8176a634a3e8d1924931f23df4c7d04f);
+            
+        
+
+        marker_19df4bbd7052c2de282dca16a382d30e.bindPopup(popup_e0d7683228460c6fe1c13029f78d991b)
+        ;
+
+        
+    
+    
+            marker_19df4bbd7052c2de282dca16a382d30e.bindTooltip(
+                `<div>
+                     Via Palestro 14, Milan 20121, Italy
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f4de3351a45f25c52bbbe69760d4fae0 = L.marker(
+                [32.7495551, -97.36329915320354],
+                {}
+            ).addTo(map_5aa3a691b60e55e5e33f56b6e5555750);
+        
+    
+        var popup_97606e6e9804faefb23f3c5fd7dcf2c6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ba2f9ef7f5a5ef3277b1d463552e1c9b = $(`<div id="html_ba2f9ef7f5a5ef3277b1d463552e1c9b" style="width: 100.0%; height: 100.0%;">Modern Art Museum of Fort Worth</div>`)[0];
+                popup_97606e6e9804faefb23f3c5fd7dcf2c6.setContent(html_ba2f9ef7f5a5ef3277b1d463552e1c9b);
+            
+        
+
+        marker_f4de3351a45f25c52bbbe69760d4fae0.bindPopup(popup_97606e6e9804faefb23f3c5fd7dcf2c6)
+        ;
+
+        
+    
+    
+            marker_f4de3351a45f25c52bbbe69760d4fae0.bindTooltip(
+                `<div>
+                     3200 Darnell Street, Fort Worth, TX 76107, United States
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f5d437b36a9c6a86a7748358adf33518 = L.marker(
+                [46.9507292, 7.4434457],
+                {}
+            ).addTo(map_5aa3a691b60e55e5e33f56b6e5555750);
+        
+    
+        var popup_f967e8a2b054b33bf95624de62529a8f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_778138681df4e2fc8c1a7feb23c03b86 = $(`<div id="html_778138681df4e2fc8c1a7feb23c03b86" style="width: 100.0%; height: 100.0%;">Kunstmuseum Bern</div>`)[0];
+                popup_f967e8a2b054b33bf95624de62529a8f.setContent(html_778138681df4e2fc8c1a7feb23c03b86);
+            
+        
+
+        marker_f5d437b36a9c6a86a7748358adf33518.bindPopup(popup_f967e8a2b054b33bf95624de62529a8f)
+        ;
+
+        
+    
+    
+            marker_f5d437b36a9c6a86a7748358adf33518.bindTooltip(
+                `<div>
+                     Hodlerstrasse 8–12, Bern CH-3000, Switzerland
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ffc35f80fcac96b879434c05817e9d1a = L.marker(
+                [37.5383735, 126.998871],
+                {}
+            ).addTo(map_5aa3a691b60e55e5e33f56b6e5555750);
+        
+    
+        var popup_07692cb137477275ff7b28b09c7da97f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b99803bd3bd5ea1124313e1370a1cfa3 = $(`<div id="html_b99803bd3bd5ea1124313e1370a1cfa3" style="width: 100.0%; height: 100.0%;">Leeum, Samsung Museum of Art</div>`)[0];
+                popup_07692cb137477275ff7b28b09c7da97f.setContent(html_b99803bd3bd5ea1124313e1370a1cfa3);
+            
+        
+
+        marker_ffc35f80fcac96b879434c05817e9d1a.bindPopup(popup_07692cb137477275ff7b28b09c7da97f)
+        ;
+
+        
+    
+    
+            marker_ffc35f80fcac96b879434c05817e9d1a.bindTooltip(
+                `<div>
+                     60-16 Itaewon-ro 55-gil, Yongsan-gu, Seoul 04348
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4e39ac25bfa981f2b8c3902c909ad7d8 = L.marker(
+                [40.406070549999995, -3.699885169087702],
+                {}
+            ).addTo(map_5aa3a691b60e55e5e33f56b6e5555750);
+        
+    
+        var popup_60a37b3b739d162025497da26bfb1cac = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9fd2e51dd0fc9612125c3209960848d9 = $(`<div id="html_9fd2e51dd0fc9612125c3209960848d9" style="width: 100.0%; height: 100.0%;">La Casa Encendida</div>`)[0];
+                popup_60a37b3b739d162025497da26bfb1cac.setContent(html_9fd2e51dd0fc9612125c3209960848d9);
+            
+        
+
+        marker_4e39ac25bfa981f2b8c3902c909ad7d8.bindPopup(popup_60a37b3b739d162025497da26bfb1cac)
+        ;
+
+        
+    
+    
+            marker_4e39ac25bfa981f2b8c3902c909ad7d8.bindTooltip(
+                `<div>
+                     Ronda de Valencia, 2, Madrid 28012, Spain
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d23a604768a08813c0fd18d853ea7c64 = L.marker(
+                [59.3436653, 18.1215222],
+                {}
+            ).addTo(map_5aa3a691b60e55e5e33f56b6e5555750);
+        
+    
+        var popup_ef77c951e2ec705ef3cf8f7f3ea69783 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_679d868b8d94ae3163cbc87df7a9b679 = $(`<div id="html_679d868b8d94ae3163cbc87df7a9b679" style="width: 100.0%; height: 100.0%;">Magasin III Museum & Foundation for Contemporary Art</div>`)[0];
+                popup_ef77c951e2ec705ef3cf8f7f3ea69783.setContent(html_679d868b8d94ae3163cbc87df7a9b679);
+            
+        
+
+        marker_d23a604768a08813c0fd18d853ea7c64.bindPopup(popup_ef77c951e2ec705ef3cf8f7f3ea69783)
+        ;
+
+        
+    
+    
+            marker_d23a604768a08813c0fd18d853ea7c64.bindTooltip(
+                `<div>
+                     Frihamnsgatan 28, Stockholm 115 56, Sweden
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bafcf5e4d0fb8337c76ea42a5fcecb13 = L.marker(
+                [55.766836, 12.5625],
+                {}
+            ).addTo(map_5aa3a691b60e55e5e33f56b6e5555750);
+        
+    
+        var popup_16d27a44dcdcd64256674826bdd008ce = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_50f0e3917bfe657e62322a56816c295c = $(`<div id="html_50f0e3917bfe657e62322a56816c295c" style="width: 100.0%; height: 100.0%;">Ordrupgaard</div>`)[0];
+                popup_16d27a44dcdcd64256674826bdd008ce.setContent(html_50f0e3917bfe657e62322a56816c295c);
+            
+        
+
+        marker_bafcf5e4d0fb8337c76ea42a5fcecb13.bindPopup(popup_16d27a44dcdcd64256674826bdd008ce)
+        ;
+
+        
+    
+    
+            marker_bafcf5e4d0fb8337c76ea42a5fcecb13.bindTooltip(
+                `<div>
+                     Vilvordevej 110, Charlottenlund DK-2920, Denmark
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2f00f2fd7d87ab804eb33129deb894cf = L.marker(
+                [25.2538764, 51.53230269972181],
+                {}
+            ).addTo(map_5aa3a691b60e55e5e33f56b6e5555750);
+        
+    
+        var popup_23546264c1689a8c8362261a275c17af = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f74f157fe8fbc8093c838d07b1c2c80d = $(`<div id="html_f74f157fe8fbc8093c838d07b1c2c80d" style="width: 100.0%; height: 100.0%;">Museum of Islamic Art</div>`)[0];
+                popup_23546264c1689a8c8362261a275c17af.setContent(html_f74f157fe8fbc8093c838d07b1c2c80d);
+            
+        
+
+        marker_2f00f2fd7d87ab804eb33129deb894cf.bindPopup(popup_23546264c1689a8c8362261a275c17af)
+        ;
+
+        
+    
+    
+            marker_2f00f2fd7d87ab804eb33129deb894cf.bindTooltip(
+                `<div>
+                     Doha, Doha 2777, Qatar
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6729f7a3d61717ffb3ccc8d1cd7d10c8 = L.marker(
+                [52.4852434, 13.4450749],
+                {}
+            ).addTo(map_5aa3a691b60e55e5e33f56b6e5555750);
+        
+    
+        var popup_3312a30ccf34970bf3e287c8d5b52371 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2864ad5cea8dafb3df96353fe935dad5 = $(`<div id="html_2864ad5cea8dafb3df96353fe935dad5" style="width: 100.0%; height: 100.0%;">Frankfurt Am Main</div>`)[0];
+                popup_3312a30ccf34970bf3e287c8d5b52371.setContent(html_2864ad5cea8dafb3df96353fe935dad5);
+            
+        
+
+        marker_6729f7a3d61717ffb3ccc8d1cd7d10c8.bindPopup(popup_3312a30ccf34970bf3e287c8d5b52371)
+        ;
+
+        
+    
+    
+            marker_6729f7a3d61717ffb3ccc8d1cd7d10c8.bindTooltip(
+                `<div>
+                     Wildenbruchstraße 15, Berlin 12045, Germany
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_dacd5685d554d427a26b4b9a65375bfb = L.marker(
+                [40.7723194, -73.9844012],
+                {}
+            ).addTo(map_5aa3a691b60e55e5e33f56b6e5555750);
+        
+    
+        var popup_d21c4391adf86c9d7cc59136ed9489fb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c3c017e996385b3ab454b8e0c3aa5360 = $(`<div id="html_c3c017e996385b3ab454b8e0c3aa5360" style="width: 100.0%; height: 100.0%;">American Folk Art Museum</div>`)[0];
+                popup_d21c4391adf86c9d7cc59136ed9489fb.setContent(html_c3c017e996385b3ab454b8e0c3aa5360);
+            
+        
+
+        marker_dacd5685d554d427a26b4b9a65375bfb.bindPopup(popup_d21c4391adf86c9d7cc59136ed9489fb)
+        ;
+
+        
+    
+    
+            marker_dacd5685d554d427a26b4b9a65375bfb.bindTooltip(
+                `<div>
+                     2 Lincoln Square, New York, NY 10023, United States
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_169abdcf7bd73a38dc185e6a034d8654 = L.marker(
+                [48.86537895, 2.2935932775390624],
+                {}
+            ).addTo(map_5aa3a691b60e55e5e33f56b6e5555750);
+        
+    
+        var popup_4f95257f8ed7c2a17ddd73f9f7e3c406 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_43396e30167f147ce2bf26c056545a2f = $(`<div id="html_43396e30167f147ce2bf26c056545a2f" style="width: 100.0%; height: 100.0%;">Musée national des arts asiatiques - Guimet</div>`)[0];
+                popup_4f95257f8ed7c2a17ddd73f9f7e3c406.setContent(html_43396e30167f147ce2bf26c056545a2f);
+            
+        
+
+        marker_169abdcf7bd73a38dc185e6a034d8654.bindPopup(popup_4f95257f8ed7c2a17ddd73f9f7e3c406)
+        ;
+
+        
+    
+    
+            marker_169abdcf7bd73a38dc185e6a034d8654.bindTooltip(
+                `<div>
+                     6 place d'Iéna, Paris 75116, France
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bbb2fc23171444596ed0d1bc641914c3 = L.marker(
+                [32.747889099999995, -97.36881967248208],
+                {}
+            ).addTo(map_5aa3a691b60e55e5e33f56b6e5555750);
+        
+    
+        var popup_0638cbf1a02e8d8fb0d0c0e820a6221c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_094c2cea9bf773251522c06cd9148750 = $(`<div id="html_094c2cea9bf773251522c06cd9148750" style="width: 100.0%; height: 100.0%;">Amon Carter Museum of American Art</div>`)[0];
+                popup_0638cbf1a02e8d8fb0d0c0e820a6221c.setContent(html_094c2cea9bf773251522c06cd9148750);
+            
+        
+
+        marker_bbb2fc23171444596ed0d1bc641914c3.bindPopup(popup_0638cbf1a02e8d8fb0d0c0e820a6221c)
+        ;
+
+        
+    
+    
+            marker_bbb2fc23171444596ed0d1bc641914c3.bindTooltip(
+                `<div>
+                     3501 Camp Bowie Blvd., Fort Worth, TX 76107, United States
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2fd8c7d66b8b454533796cceb838866d = L.marker(
+                [-27.459477, 153.036797],
+                {}
+            ).addTo(map_5aa3a691b60e55e5e33f56b6e5555750);
+        
+    
+        var popup_0366ef30f1960104b8c4cfaf114b1907 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eb1d4c360cb3941cb1fa57d32659654e = $(`<div id="html_eb1d4c360cb3941cb1fa57d32659654e" style="width: 100.0%; height: 100.0%;">Institute of Modern Art</div>`)[0];
+                popup_0366ef30f1960104b8c4cfaf114b1907.setContent(html_eb1d4c360cb3941cb1fa57d32659654e);
+            
+        
+
+        marker_2fd8c7d66b8b454533796cceb838866d.bindPopup(popup_0366ef30f1960104b8c4cfaf114b1907)
+        ;
+
+        
+    
+    
+            marker_2fd8c7d66b8b454533796cceb838866d.bindTooltip(
+                `<div>
+                     420 Brunswick Street, Fortitude Valley, Brisbane, QLD 4006
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e1ba6d980c0b138a8a607252ddcbffbe = L.marker(
+                [41.09324555, -73.91800145249479],
+                {}
+            ).addTo(map_5aa3a691b60e55e5e33f56b6e5555750);
+        
+    
+        var popup_f819c879882165abdb98e6a5e1bd5727 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_19c870b2541ccf0124ef0b8192b1d608 = $(`<div id="html_19c870b2541ccf0124ef0b8192b1d608" style="width: 100.0%; height: 100.0%;">Edward Hopper House</div>`)[0];
+                popup_f819c879882165abdb98e6a5e1bd5727.setContent(html_19c870b2541ccf0124ef0b8192b1d608);
+            
+        
+
+        marker_e1ba6d980c0b138a8a607252ddcbffbe.bindPopup(popup_f819c879882165abdb98e6a5e1bd5727)
+        ;
+
+        
+    
+    
+            marker_e1ba6d980c0b138a8a607252ddcbffbe.bindTooltip(
+                `<div>
+                     82 North Broadway, Nyack, NY 10960, United States
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6addb6daf22df49e12eb16674e940d46 = L.marker(
+                [40.7217683, -74.0030317],
+                {}
+            ).addTo(map_5aa3a691b60e55e5e33f56b6e5555750);
+        
+    
+        var popup_2eeb5722d0ad9c07503ddd6069d3295f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3ec5af6067cb32086ed8830ccc66702a = $(`<div id="html_3ec5af6067cb32086ed8830ccc66702a" style="width: 100.0%; height: 100.0%;">Leslie-Lohman Museum</div>`)[0];
+                popup_2eeb5722d0ad9c07503ddd6069d3295f.setContent(html_3ec5af6067cb32086ed8830ccc66702a);
+            
+        
+
+        marker_6addb6daf22df49e12eb16674e940d46.bindPopup(popup_2eeb5722d0ad9c07503ddd6069d3295f)
+        ;
+
+        
+    
+    
+            marker_6addb6daf22df49e12eb16674e940d46.bindTooltip(
+                `<div>
+                     26 Wooster Street, New York, NY 10013, United States
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7ae4e2bd2bf9ed871669c4be76dfda2f = L.marker(
+                [50.9385301, 6.95423538182321],
+                {}
+            ).addTo(map_5aa3a691b60e55e5e33f56b6e5555750);
+        
+    
+        var popup_e65fe94993e064fda8b5f0086659274b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_84f2ccb2d4ab03ae4f3e904fe410c66b = $(`<div id="html_84f2ccb2d4ab03ae4f3e904fe410c66b" style="width: 100.0%; height: 100.0%;">Kolumba Kunstmuseum</div>`)[0];
+                popup_e65fe94993e064fda8b5f0086659274b.setContent(html_84f2ccb2d4ab03ae4f3e904fe410c66b);
+            
+        
+
+        marker_7ae4e2bd2bf9ed871669c4be76dfda2f.bindPopup(popup_e65fe94993e064fda8b5f0086659274b)
+        ;
+
+        
+    
+    
+            marker_7ae4e2bd2bf9ed871669c4be76dfda2f.bindTooltip(
+                `<div>
+                     Kolumbastraße 4, Cologne 50667, Germany
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_303b1bcd5ba574854a0864f2913215d7 = L.marker(
+                [40.72244485, -74.00421550764841],
+                {}
+            ).addTo(map_5aa3a691b60e55e5e33f56b6e5555750);
+        
+    
+        var popup_920bb520726feeb91f1ec72876a506a6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fd1b245664a22d7f35c643dc0b0ff87f = $(`<div id="html_fd1b245664a22d7f35c643dc0b0ff87f" style="width: 100.0%; height: 100.0%;">Recess</div>`)[0];
+                popup_920bb520726feeb91f1ec72876a506a6.setContent(html_fd1b245664a22d7f35c643dc0b0ff87f);
+            
+        
+
+        marker_303b1bcd5ba574854a0864f2913215d7.bindPopup(popup_920bb520726feeb91f1ec72876a506a6)
+        ;
+
+        
+    
+    
+            marker_303b1bcd5ba574854a0864f2913215d7.bindTooltip(
+                `<div>
+                     41 Grand Street, New York, NY 10013, United States
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c1e05c789a5b817464de36433bb598cf = L.marker(
+                [39.82599635, -86.18583487318881],
+                {}
+            ).addTo(map_5aa3a691b60e55e5e33f56b6e5555750);
+        
+    
+        var popup_1f8ae002fa121daacd33ca7dc5c91a04 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2c5161fd8ffbed623daa139101e145f1 = $(`<div id="html_2c5161fd8ffbed623daa139101e145f1" style="width: 100.0%; height: 100.0%;">Indianapolis Museum of Art at Newfields</div>`)[0];
+                popup_1f8ae002fa121daacd33ca7dc5c91a04.setContent(html_2c5161fd8ffbed623daa139101e145f1);
+            
+        
+
+        marker_c1e05c789a5b817464de36433bb598cf.bindPopup(popup_1f8ae002fa121daacd33ca7dc5c91a04)
+        ;
+
+        
+    
+    
+            marker_c1e05c789a5b817464de36433bb598cf.bindTooltip(
+                `<div>
+                     4000 Michigan Road, Indianapolis, IN 46208, United States
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a50ae8d779518f86d73ec7f3d27fe9b9 = L.marker(
+                [40.4162159, -3.6949316886569106],
+                {}
+            ).addTo(map_5aa3a691b60e55e5e33f56b6e5555750);
+        
+    
+        var popup_179b34e27df5999973076256456e9c11 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_141be77e34efd4fc1f9099ddbd194e63 = $(`<div id="html_141be77e34efd4fc1f9099ddbd194e63" style="width: 100.0%; height: 100.0%;">Museo Thyssen-Bornemisza</div>`)[0];
+                popup_179b34e27df5999973076256456e9c11.setContent(html_141be77e34efd4fc1f9099ddbd194e63);
+            
+        
+
+        marker_a50ae8d779518f86d73ec7f3d27fe9b9.bindPopup(popup_179b34e27df5999973076256456e9c11)
+        ;
+
+        
+    
+    
+            marker_a50ae8d779518f86d73ec7f3d27fe9b9.bindTooltip(
+                `<div>
+                     Paseo del Prado, 8, Madrid 28014, Spain
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_566f5bc607aabfa95e7877e5cb4d4724 = L.marker(
+                [44.9361004, 1.013416],
+                {}
+            ).addTo(map_5aa3a691b60e55e5e33f56b6e5555750);
+        
+    
+        var popup_d3e3ae0ce8dbdc07f380eafa32b83631 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c75c77551a88478a9c4def058f48b206 = $(`<div id="html_c75c77551a88478a9c4def058f48b206" style="width: 100.0%; height: 100.0%;">Musée national de Préhistoire</div>`)[0];
+                popup_d3e3ae0ce8dbdc07f380eafa32b83631.setContent(html_c75c77551a88478a9c4def058f48b206);
+            
+        
+
+        marker_566f5bc607aabfa95e7877e5cb4d4724.bindPopup(popup_d3e3ae0ce8dbdc07f380eafa32b83631)
+        ;
+
+        
+    
+    
+            marker_566f5bc607aabfa95e7877e5cb4d4724.bindTooltip(
+                `<div>
+                     1 rue du musée, Les Eyzies-de-Tayac 24620, France
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_785b398ddd91d542f5eeba3cc5542954 = L.marker(
+                [40.6885885, -73.9791712],
+                {}
+            ).addTo(map_5aa3a691b60e55e5e33f56b6e5555750);
+        
+    
+        var popup_828f15ea31788d95b28a4c0ca5bc655d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_addd053886349b83e6c3db3041900e2a = $(`<div id="html_addd053886349b83e6c3db3041900e2a" style="width: 100.0%; height: 100.0%;">UrbanGlass</div>`)[0];
+                popup_828f15ea31788d95b28a4c0ca5bc655d.setContent(html_addd053886349b83e6c3db3041900e2a);
+            
+        
+
+        marker_785b398ddd91d542f5eeba3cc5542954.bindPopup(popup_828f15ea31788d95b28a4c0ca5bc655d)
+        ;
+
+        
+    
+    
+            marker_785b398ddd91d542f5eeba3cc5542954.bindTooltip(
+                `<div>
+                     647 Fulton Street, Brooklyn, NY 11217, United States
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_78e61579154f97f83941b41c98c663aa = L.marker(
+                [42.3592593, -71.0933625],
+                {}
+            ).addTo(map_5aa3a691b60e55e5e33f56b6e5555750);
+        
+    
+        var popup_538d4dbffee9769aa452ebeb007771f5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_21d34655b7c17f73fce4ed08c98db8ba = $(`<div id="html_21d34655b7c17f73fce4ed08c98db8ba" style="width: 100.0%; height: 100.0%;">Arts at MIT</div>`)[0];
+                popup_538d4dbffee9769aa452ebeb007771f5.setContent(html_21d34655b7c17f73fce4ed08c98db8ba);
+            
+        
+
+        marker_78e61579154f97f83941b41c98c663aa.bindPopup(popup_538d4dbffee9769aa452ebeb007771f5)
+        ;
+
+        
+    
+    
+            marker_78e61579154f97f83941b41c98c663aa.bindTooltip(
+                `<div>
+                     77 Massachusetts Avenue, Cambridge, MA 02139, United States
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c3f419e2e6ccf68ac40bed24f774f7c6 = L.marker(
+                [34.06447235, -118.35994593475988],
+                {}
+            ).addTo(map_5aa3a691b60e55e5e33f56b6e5555750);
+        
+    
+        var popup_379b4a1ee099a9bc22a6a6249ce069dc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aacdd305a1158cb470a15ee9c41380d3 = $(`<div id="html_aacdd305a1158cb470a15ee9c41380d3" style="width: 100.0%; height: 100.0%;">Los Angeles County Museum of Art</div>`)[0];
+                popup_379b4a1ee099a9bc22a6a6249ce069dc.setContent(html_aacdd305a1158cb470a15ee9c41380d3);
+            
+        
+
+        marker_c3f419e2e6ccf68ac40bed24f774f7c6.bindPopup(popup_379b4a1ee099a9bc22a6a6249ce069dc)
+        ;
+
+        
+    
+    
+            marker_c3f419e2e6ccf68ac40bed24f774f7c6.bindTooltip(
+                `<div>
+                     5905 Wilshire Boulevard, Los Angeles, CA 90036, United States
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+   <script src="vendor/jquery.min.js"></script>
+   <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+   <script src="js/script.js"></script>
+   
+</html>
